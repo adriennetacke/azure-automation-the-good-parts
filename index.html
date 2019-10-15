@@ -8,7 +8,7 @@
 
 		<link rel="stylesheet" href="css/reset.css">
 		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/black.css">
+		<link rel="stylesheet" href="css/theme/azure.css">
 
 		<!-- Theme used for syntax highlighting of code -->
 		<link rel="stylesheet" href="lib/css/monokai.css">
@@ -25,17 +25,104 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section>
-					<h1>Azure Automation: The Good Parts</h1>
-					<h3>DevOps Space 2019</h3>
-					<h3>@adriennetacke</h3>
+				<section class="title">
+					<h1>Azure Automation: The <span class="emphasis">Good</span> Parts</h1>
+					<p>DevOps Space 2019</p>
+					<p style="display:flex;justify-content:center;align-items:center;font-size:.5em;">
+						<img src="../assets/twitter-logo.png" style="margin:0!important;" width="100px"/>
+						<span>@adriennetacke</span>
+					</p>
 				</section>
-				<section>Typical Workflow</section>
-				<section data-transition="fade-in-then-out">
+				<section data-background-color="rgb(98,118,140)" data-background-image="../assets/copy-paste.gif" data-background-size="contain">
+					<h3 style="color:#fff;">Remember when...</h3>
+				</section>
+				<section>
+					<h2 style="font-style: italic;">"It's too <span class="emphasis">complicated</span> to set up."</h2>
+				</section>
+				<section>
+					<h2>But what about:</h2>
+					<span class="fragment fade-in"><p>Reliability?</p></span>
+					<span class="fragment fade-in"><p>Speed?</p></span>
+				</section>
+				<section>
+					<p>Tools that literally exist for this purpose and is part of our Microsoft subscription???</p>
+				</section>
+				<section data-background-color="#fff">
+					<h2 style="display:flex;align-items:center;justify-content:center;color:#2dc0e1;">"Hello." - <img src="../assets/azure-pipelines-logo.png" height="200px"/></h2>
+				</section>
+				<section>
 					Which steps do we automate?
 				</section>
-				<section data-transition="fade-in-then-out">
-					Which steps CAN we automate?
+				<section>
+					Which steps <span class="emphasis">CAN</span> we automate?
+				</section>
+				<section data-transition="slide" data-background-transition="slide" data-transition-speed="slow">
+					<div class="row smaller">
+						<span class="fragment fade-in">Code </span>
+						<span class="fragment fade-in" style="padding: 0 50px;"> ➡ </span>
+						<span class="fragment fade-in">Open PR (feature -> dev) </span>
+						<span class="fragment fade-in">➡ </span>
+						<span class="fragment fade-in">Code Review </span>
+						<span class="fragment fade-in">➡ </span>
+						<span class="fragment fade-in">Merged into dev </span>
+						<span class="fragment fade-in" style="transform:translateX(30px)">➡ </span>
+					</div>
+				</section>
+				<section data-transition="slide" data-background-transition="slide" data-transition-speed="slow">
+					<div class="row smaller">
+						<span style="transform:translateX(-30px)">➡ </span>
+						<span class="fragment fade-in" style="padding: 0 50px;">QA </span>
+						<span class="fragment fade-in" style="padding: 0 50px;"> ➡ </span>
+						<span class="fragment fade-in" style="padding: 0 50px;">Ctrl + C, Ctrl + V </span>
+						<span class="fragment fade-in" style="padding: 0 50px;"> ➡ </span>
+						<span class="fragment fade-in" style="padding: 0 250px;"> <h1>😨</h1></span>
+					</div>
+				</section>
+				<section data-background-color="#fff">
+					<img src="../assets/azure-pipelines-logo.png" height="300px"/>
+					<h1 style="color:#2dc0e1;">This stops today!</h1>
+				</section>
+				<section data-transition="slide" data-background-transition="slide" data-transition-speed="slow">
+					<div class="row smaller">
+						<span>Code </span>
+						<span style="padding: 0 50px;"> ➡ </span>
+						<span >Open PR (feature -> dev) </span>
+						<span style="padding: 0 50px;">➡ </span>
+						<span class="fragment fade-in emphasis">Auto-Add Reviewers</span>
+					</div>
+				</section>
+				<section data-transition="slide" data-background-transition="slide" data-transition-speed="slow">
+					<div class="row smaller">
+						<span style="padding: 0 50px;">➡ </span>
+						<span class="fragment fade-in emphasis">Run Pre-Build</span>
+						<span style="padding: 0 50px;">➡ </span>
+						<span>Code Review </span>
+						<span>➡ </span>
+						<span class="fragment fade-in emphasis">Trigger dev build</span>
+						<span style="transform:translateX(30px)">➡ </span>
+					</div>
+				</section>
+				<section data-transition="slide" data-background-transition="slide" data-transition-speed="slow">
+					<div class="row smaller">
+						<span style="transform:translateX(-30px)">➡ </span>
+						<span class="fragment fade-in emphasis">Release to dev</span>
+						<span style="padding: 0 50px;"> ➡ </span>
+						<span style="padding: 0 50px;">(dev -> master) </span>
+						<span style="padding: 0 50px;"> .. </span>
+						<span style="padding: 0 50px;">Trigger QA build </span>
+						<span style="padding: 0 50px;"> ➡ </span>
+						<span style="padding: 0 50px;">Release to QA </span>
+						<span style="transform:translateX(30px)">➡ </span>
+					</div>
+				</section>
+				<section data-transition="slide" data-background-transition="slide" data-transition-speed="slow">
+					<div class="row smaller">
+						<span style="transform:translateX(-30px)">➡ </span>
+						<span style="padding: 0 50px;">  </span>
+						<span style="padding: 0 50px;"> QA Approval </span>
+						<span style="padding: 0 50px;"> ➡ </span>
+					
+					</div>
 				</section>
 			</div>
 		</div>

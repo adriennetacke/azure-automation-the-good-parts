@@ -1,5 +1,30 @@
 # Azure Automation: The Good Parts
 
+## Intro
+
+📷*GIF Copying files*
+
+- Remember when deployment was like this?
+- I do, and unfortunately, it was not too long ago
+- 2 years ago, came onto a new team where deployment was a manual copy and paste via SFTP
+- Avoided full CI/CD process because it was "too complicated"
+
+## But what about:
+- Reliability
+- Speed
+- Tools?!
+
+📷 HELLO - Azure DevOps
+
+## Luckily, within the next 3-6 months, had opportunity to set up CI/CD from scratch
+
+## Structure
+Portfolios 
+Post Sale
+Compliance
+Client Setup
+User Setup
+
 ## Typical Workflow
 1. Code
 2. Push to remote
