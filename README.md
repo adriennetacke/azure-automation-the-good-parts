@@ -1,7 +1,6 @@
-# Azure Automation: The Good Parts
+# Up and Running with Azure DevOps
 
 ![Cover slide](./assets/cover.png)
-## ▶ [Follow along & View in Browser!](https://adriennetacke.github.io/azure-automation-the-good-parts/)
 
 ## Presented by [Adrienne Tacke](https://blog.adrienne.io/speaking)
 
